@@ -2,8 +2,24 @@ import requests
 from bs4 import BeautifulSoup
 from filme import Filme
 
+'''
+    Alguns breves comentários sobre as bibliotecas usadas nesse programa...
+
+    A biblioteca requests permite que o programador possa utilizar os métodos HTTP da Web.
+    O método GET usado em um link http é equivalente ao acesso desse link dando enter no browser.
+    Neste caso, estamos usando o método GET para acessar o link que contém a lista de filmes que estamos interessados.
+    
+    Já o beautifulsoup é uma biblioteca de webscrapping que permite o programador buscar em bloco de texto HTML
+    as informações que ele desejar. Assim, a gente usa essas duas bibliotecas em conjunto:
+        1 - A requests dá um get no nosso link (chamamos de URL) e coleta o texto em formato HTML da página.
+        2 - Então o beautifulsoup vai vasculhar nesse texto as informações que nós queremos.
+'''
 
 class Locadora:
+    '''
+    Uma classe que utiliza a dataclass Filme criada no arquivo filme.py para mostrar ao usuário
+    um catálago de todos os filmes nessa URL e filmes anteriores e posteriores a um determinado ano.
+    '''
     def __init__(self, url) -> None:
         self.url = url
         self.all_movies = []

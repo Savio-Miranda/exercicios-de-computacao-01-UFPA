@@ -2,7 +2,7 @@
 3 - Faça um código que leia um vetor de 10 valores inteiros e positivos.
 A partir do vetor original, criar um segundo vetor da seguinte forma:
 os elementos de índice par receberão os respectivos valores divididos por 2;
-e os elementos deíndice ímpar receberão os respectivos valores multiplicados por 3.
+e os elementos de índice ímpar receberão os respectivos valores multiplicados por 3.
 Imprima os dois vetores criados.
 '''
 

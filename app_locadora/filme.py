@@ -1,15 +1,6 @@
 import re
 from dataclasses import dataclass
 
-'''
-    A biblioteca requests permite que o programador possa utilizar os métodos HTTP da Web.
-    O método GET usado em um link http é equivalente ao acesso desse link dando enter no browser.
-    
-    Já o beautifulsoup é uma biblioteca de webscrapping que permite o programador buscar em bloco de texto
-    as informações que ele desejar. Assim, a gente usa essas duas bibliotecas em conjunto:
-        1 - A requests dá um get no nosso link (chamamos de URL) e coleta o texto em formato HTML da página.
-        2 - Então o beautifulsoup vai vasculhar nesse texto as informações que nós queremos.
-'''
 
 @dataclass
 class Filme:
