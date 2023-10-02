@@ -81,8 +81,8 @@ class Matrizes():
     transposta = []
     linha = []
 
-    for i in range(len(self.matriz)):
-      for j in range(len(self.matriz[i])):
+    for i in range(self.ordem[1]):
+      for j in range(self.ordem[0]):
         linha.append(self.matriz[j][i])
 
       transposta.append(linha)

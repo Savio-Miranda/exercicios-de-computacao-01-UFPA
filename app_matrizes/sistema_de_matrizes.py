@@ -2,8 +2,8 @@
 from matrizes import Matrizes
 
 
-matriz_A = [[2, 3], [1, 0], [4, 5]]
-matriz_B = [[3, 1],[2, 4]]
+matriz_A = [[1, 2, 3], [2, 4, 5], [3, 5, 6]]
+matriz_B = [[1, 1, 1],[1, 1, 1], [1, 1, 1]]
 
 base = Matrizes(matriz_A)
 
@@ -14,7 +14,7 @@ print(f'operar elementos:\n{m1}\n')
 m2 = base.soma_de_matrizes(matriz_B)
 print(f'Soma de matrizes:\n{m2}\n')
 
-m3 = base.elementos_menores_que_n(5)
+m3 = base.elementos_menores_que_n(7)
 print(f'Elementos menores que n:\n{m3}\n')
 
 m4 = base.matriz_transposta()
