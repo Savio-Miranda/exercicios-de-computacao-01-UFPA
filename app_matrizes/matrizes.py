@@ -122,7 +122,27 @@ class Matrizes():
       matriz_C.append(linha)
       
     return matriz_C
-      
+  
+
+  def verifica_identidade(self):
+    for i in range(len(self.matriz)):
+      for j in range(len(self.matriz[i])):
+        elemento = self.matriz[i][j]
+        if (i == j) and (elemento != 1):
+          return False
+          
+        elif (i != j) and (elemento != 0):
+          return False
+    return True
+
+  
+  def verifica_se_e_quadrada(self):
+    for i in self.matriz:
+      if self.ordem[0] != len(i):
+        return False
+    
+    return True
+  
   
   def gerar_matriz_quadrada(self, n: int) -> list:
     """

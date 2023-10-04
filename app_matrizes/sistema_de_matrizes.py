@@ -2,7 +2,7 @@
 from matrizes import Matrizes
 
 
-matriz_A = [[1, 2, 3], [2, 4, 5], [3, 5, 6]]
+matriz_A = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
 matriz_B = [[1, 1, 1],[1, 1, 1], [1, 1, 1]]
 
 base = Matrizes(matriz_A)
@@ -31,3 +31,9 @@ print(f'Matriz gerada:\n{matriz_quadrada}\n')
 
 m7 = base.soma_de_diagonal(matriz_quadrada)
 print(f'Soma da diagonal:\n{m7}')
+
+m8 = base.verifica_se_e_quadrada()
+print(f'É quadrada? {m8}')
+
+m9 = base.verifica_identidade()
+print(f'é identidade? {m9}')
